@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aperitif - Custom Template</title>
 
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/modules.css">
 
     <!-- Canonical URL usage -->
     <link rel="canonical" href="https://aperitif.io/">
@@ -56,7 +56,7 @@ START MODULE AREA 1: header1
 <header class="MOD_HEADER1">
   <div data-layout="_r">
     <div data-layout="al16 de10" class="MOD_HEADER1_Title">
-      <h1 class="MOD_HEADER1_TextLogo">@yield('title')</h1>
+      <h1 class="MOD_HEADER1_TextLogo"><a href="/">@yield('title')</a></h1>
       <p class="MOD_HEADER1_Slogan">@yield('description')</p>
     </div>
   </div>
@@ -108,7 +108,7 @@ START MODULE AREA 3: Footer 2
 END MODULE AREA 3: Footer 2
 -->
 
-<script src="js/index.js"></script>
+<script src="/js/index.js"></script>
 </body>
 
 </html>
