@@ -49,7 +49,9 @@
 <!-- End Head -->
 
 <body class="default">
-
+@if (session('flash_message'))
+<div class="flash_message" onclick="this.classList.add('hidden')">{{ session('flash_message') }}</div>
+@endif
 <!--
 START MODULE AREA 1: header1
 -->
