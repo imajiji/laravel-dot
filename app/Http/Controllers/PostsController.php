@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Post;
 
 use App\Http\Requests\PostRequest;
-
+// unko
 class PostsController extends Controller
 {
     public function index() {
