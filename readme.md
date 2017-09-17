@@ -49,3 +49,46 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Command log
+```
+# php composer.phar create-project --prefer-dist laravel/laravel [myblog]
+
+# php artisan make:migration create_posts_table --create=posts
+# php artisan migrate
+
+# php artisan make:migration add_summary_to_posts_table --table=posts
+# php artisan migrate
+# php artisan migrate:status
+(# php artisan migrate:rollback)
+
+# php artisan make:model Post
+
+-----
+# php artisan tinker
+$post = new App\Post();
+$post->title = 'title 1';
+$post->body = 'body 1';
+$post->save();
+App\Post::create(['title'=>'title 2', 'body'=>'body 2']);
+
+App\Post::all()->toArray();
+App\Post::where('id', '>', 1)->get()->toArray();
+App\Post::where('id', '>', 1)->orderBy('created_at', 'desc')->get()->toArray();
+App\Post::where('id', '>', 1)->take(1)->get()->toArray();
+$post = App\Post::find(3);
+$post->title = 'title 3 updated';
+$post->save();
+App\Post::all()->toArray();
+App\Post::find(3)->update(['title'=>'title 3 updated again']);
+App\Post::all()->toArray();
+$post = App\Post::find(3);
+$post->delete();
+App\Post::all()->toArray();
+-----
+
+# php artisan make:controller PostsController
+
+// バリデーションを入れる
+# php artisan make:request PostRequest
+```

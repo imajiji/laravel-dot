@@ -24,6 +24,12 @@
         @endif
     </p>
     <p>
+        <input type="text" name="summary" placeholder="summary" value="{{ old('summary') }}">
+        @if ($errors->has('summary'))
+        <span class="error">{{ $errors->first('summary') }}</span>
+        @endif
+    </p>
+    <p>
         <input type="submit" value="Add New">
     </p>
 </form>

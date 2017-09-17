@@ -32,6 +32,7 @@ class PostsController extends Controller
         $post = new Post();
         $post->title = $request->title;
         $post->body = $request->body;
+        $post->summary = $request->summary;
         $post->save();
         return redirect('/')->with('flash_message', 'Post Added!');
     }
@@ -40,6 +41,7 @@ class PostsController extends Controller
         $post = Post::findOrFail($id);
         $post->title = $request->title;
         $post->body = $request->body;
+        $post->summary = $request->summary;
         $post->save();
         return redirect('/')->with('flash_message', 'Post Updated!');
     }
