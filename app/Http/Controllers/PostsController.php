@@ -34,6 +34,12 @@ class PostsController extends Controller
         $post->body = $request->body;
         $post->summary = $request->summary;
         $post->save();
+
+        $files = request('files');
+        if ($files) foreach ($files as $file) {
+            $file->store('public');
+            $post->images()->create(['filename' => $file->hashName()]);
+        }
         return redirect('/')->with('flash_message', 'Post Added!');
     }
 

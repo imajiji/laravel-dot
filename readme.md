@@ -97,6 +97,4 @@ App\Post::all()->toArray();
 # php artisan make:model Image
 （php artisan make:model Image -m でいっぺんにいける？）
 
-// 画像idの追加
-# php artisan make:migration add_image_id_to_posts_table --table=posts
 ```
