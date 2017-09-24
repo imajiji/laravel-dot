@@ -91,4 +91,12 @@ App\Post::all()->toArray();
 
 // バリデーションを入れる
 # php artisan make:request PostRequest
+
+// 画像テーブルの作成
+# php artisan make:migration create_images_table --create=images
+# php artisan make:model Image
+（php artisan make:model Image -m でいっぺんにいける？）
+
+// 画像idの追加
+# php artisan make:migration add_image_id_to_posts_table --table=posts
 ```
