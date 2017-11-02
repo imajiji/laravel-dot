@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Post;
+use App\Image;
 
 use App\Http\Requests\PostRequest;
 // unko
@@ -29,17 +31,19 @@ class PostsController extends Controller
     }
 
     public function store(PostRequest $request) {
+
         $post = new Post();
         $post->title = $request->title;
         $post->body = $request->body;
         $post->summary = $request->summary;
         $post->save();
 
-        $files = request('files');
-        if ($files) foreach ($files as $file) {
-            $file->store('public');
-            $post->images()->create(['filename' => $file->hashName()]);
-        }
+        $path = $request->file('image')->store('public/products');
+        $image = new Image();
+        $image->post_id = $post->id;
+        $image->path = $path;
+        $image->save();
+
         return redirect('/')->with('flash_message', 'Post Added!');
     }
 
