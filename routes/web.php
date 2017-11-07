@@ -34,3 +34,6 @@ Route::get('/posts/{id}/edit', 'PostsController@edit');
 Route::post('/posts', 'PostsController@store');
 Route::patch('/posts/{id}', 'PostsController@update');
 Route::delete('/posts/{id}', 'PostsController@destroy');
+
+# Test form
+Route::get('/tests/', 'TestsController@index');
