@@ -12,7 +12,8 @@ use App\Http\Requests\PostRequest;
 class PostsController extends Controller
 {
     public function index() {
-        $posts = Post::latest()->get();
+        $posts = Post::join('images', 'posts.id', '=', 'images.post_id')->latest('posts.created_at')->get();
+        // dd($posts);
         return view('posts.index')->with('posts', $posts);
     }
 
@@ -39,9 +40,10 @@ class PostsController extends Controller
         $post->save();
 
         $path = $request->file('image')->store('public/products');
+
         $image = new Image();
         $image->post_id = $post->id;
-        $image->path = $path;
+        $image->path = 'products/'.basename($path);
         $image->save();
 
         return redirect('/')->with('flash_message', 'Post Added!');
