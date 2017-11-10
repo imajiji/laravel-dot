@@ -57,6 +57,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # php artisan make:migration create_posts_table --create=posts
 # php artisan migrate
 
+// テーブルのアップデート
 # php artisan make:migration add_summary_to_posts_table --table=posts
 # php artisan migrate
 # php artisan migrate:status
@@ -96,5 +97,8 @@ App\Post::all()->toArray();
 # php artisan make:migration create_images_table --create=images
 # php artisan make:model Image
 （php artisan make:model Image -m でいっぺんにいける？）
+
+// リネーム
+[Migrationファイル内でrenameColumnがエラーになったのを解決 - Qiita](https://qiita.com/Frog_woman/items/d98b861a2033610798f7)
 
 ```
