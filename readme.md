@@ -98,7 +98,6 @@ App\Post::all()->toArray();
 # php artisan make:model Image
 （php artisan make:model Image -m でいっぺんにいける？）
 
+```
 // リネーム
 [Migrationファイル内でrenameColumnがエラーになったのを解決 - Qiita](https://qiita.com/Frog_woman/items/d98b861a2033610798f7)
-
-```
