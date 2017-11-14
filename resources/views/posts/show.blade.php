@@ -71,7 +71,7 @@ START MODULE AREA 3: CTA Bar 1
       <p class="MOD_CTABAR_Msg">Lorem ipsum dolor sit amet, consectetur adipi scing elit</p>
     </div>
     <div data-layout="al16 ch6 ec4" class="MOD_CTABAR_BtnContainer">
-      <a class="btn" href="#">Read more</a>
+      <a class="btn" href="{{$post->link_url}}" target="_blank">Read more</a>
     </div>
   </div>
 </section>

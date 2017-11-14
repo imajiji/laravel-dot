@@ -36,15 +36,25 @@ class PostsController extends Controller
         $post = new Post();
         $post->title = $request->title;
         $post->body = $request->body;
-        $post->summary = $request->summary;
+        $post->link_url = $request->link_url;
         $post->save();
 
-        $path = $request->file('image')->store('public/products');
+        // $path = $request->file('image')->store('public/products');
 
         $image = new Image();
-        $image->post_id = $post->id;
-        $image->path = 'products/'.basename($path);
-        $image->save();
+        $now = date("Y-m-d H:i:s");
+        for ($i=1; $i <= 4; $i++) {
+            if (!empty($request->{"img_url".$i})) {
+                $datum[] = [
+                    'post_id' => $post->id,
+                    'path' => $request->{"img_url".$i},
+                    'sort' => $i,
+                    'created_at' => $now,
+                    'updated_at' => $now
+                ];
+            }
+        }
+        $return = $image->insert($datum);
 
         return redirect('/')->with('flash_message', 'Post Added!');
     }
@@ -53,7 +63,7 @@ class PostsController extends Controller
         $post = Post::findOrFail($id);
         $post->title = $request->title;
         $post->body = $request->body;
-        $post->summary = $request->summary;
+        $post->link_url = $request->link_url;
         $post->save();
         return redirect('/')->with('flash_message', 'Post Updated!');
     }

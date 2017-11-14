@@ -25,9 +25,9 @@
         @endif
     </p>
     <p>
-        <input type="text" name="summary" placeholder="summary" value="{{ old('summary', $post->summary) }}">
-        @if ($errors->has('summary'))
-        <span class="error">{{ $errors->first('summary') }}</span>
+        <input type="text" name="link_url" placeholder="link_url" value="{{ old('link_url', $post->link_url) }}">
+        @if ($errors->has('link_url'))
+        <span class="error">{{ $errors->first('link_url') }}</span>
         @endif
     </p>
     <p>
