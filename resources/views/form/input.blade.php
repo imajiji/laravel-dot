@@ -1,5 +1,5 @@
 <div class="container">
-    <form method="POST" action="http://stg-select.sgscloud.info/api/user_deal/change_status_of_point">
+    <form method="POST" action="https://select.epark.jp/api/user_deal/change_status_of_point">
         {{ csrf_field() }}
 
         <div class="form-group">

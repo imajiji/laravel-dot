@@ -12,7 +12,7 @@ use App\Http\Requests\PostRequest;
 class PostsController extends Controller
 {
     public function index() {
-        $posts = Post::join('images', 'posts.id', '=', 'images.post_id')->latest('posts.created_at')->get();
+        $posts = Post::join('images', 'posts.id', '=', 'images.post_id')->where('sort', 1)->latest('posts.created_at')->get();
         // dd($posts);
         return view('posts.index')->with('posts', $posts);
     }
