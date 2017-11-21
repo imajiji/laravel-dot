@@ -10,7 +10,8 @@
     @forelse ($posts as $post)
     <div data-layout="ch8 ec4">
       <a href="{{ action('PostsController@show', $post->post_id) }}" class="MOD_FEATURE_Container">
-        <img class="MOD_FEATURE_Picture" src="{{ asset('storage/'.$post->path) }}" alt="">
+        {{-- <img class="MOD_FEATURE_Picture" src="{{ asset('storage/'.$post->path) }}" alt=""> --}}
+        <img class="MOD_FEATURE_Picture" src="{{$post->path}}" alt="">
         <div class="MOD_FEATURE_TextContainer">
           <p class="MOD_FEATURE_Title" data-theme="_ts2">{{$post->title}}</p>
           <p class="MOD_FEATURE_Description">{{$post->body}}</p>

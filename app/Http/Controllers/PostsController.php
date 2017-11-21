@@ -18,7 +18,8 @@ class PostsController extends Controller
     }
 
     public function show($id) {
-        $post = Post::findOrFail($id);
+        $post = Post::join('images', 'posts.id', '=', 'images.post_id')->where('post_id', $id)->get();
+        // dd($post);
         return view('posts.show')->with('post', $post);
     }
 

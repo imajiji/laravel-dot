@@ -24,38 +24,16 @@ START MODULE AREA 2: Lightbox
 -->
 <section class="MOD_LIGHTBOXIMGX4BACKGROUND" data-theme="_bgp">
   <div data-layout="_r">
+    @foreach($post as $key => $item)
     <div data-layout="al8 de4">
-      <a href="https://unsplash.it/800/600?image=55" class="AP_lightbox" aria-haspopup="true">
+      <a href="{{$item->path}}" class="AP_lightbox" aria-haspopup="true">
         <figure>
-          <img src="https://unsplash.it/300/300?image=55" alt="" data-theme="_is2">
-          <figcaption>Fig1. Image Caption</figcaption>
+          <img src="{{$item->path}}" alt="" data-theme="_is2">
+          <figcaption>Fig{{$key}}. Image Caption</figcaption>
         </figure>
       </a>
     </div>
-    <div data-layout="al8 de4">
-      <a href="https://unsplash.it/800/600?image=56" class="AP_lightbox" aria-haspopup="true">
-        <figure>
-          <img src="https://unsplash.it/300/300?image=56" alt="" data-theme="_is2">
-          <figcaption>Fig2. Image Caption</figcaption>
-        </figure>
-      </a>
-    </div>
-    <div data-layout="al8 de4">
-      <a href="https://unsplash.it/800/600?image=57" class="AP_lightbox" aria-haspopup="true">
-        <figure>
-          <img src="https://unsplash.it/300/300?image=57" alt="" data-theme="_is2">
-          <figcaption>Fig3. Image Caption</figcaption>
-        </figure>
-      </a>
-    </div>
-    <div data-layout="al8 de4">
-      <a href="https://unsplash.it/800/600?image=58" class="AP_lightbox" aria-haspopup="true">
-        <figure>
-          <img src="https://unsplash.it/300/300?image=58" alt="" data-theme="_is2">
-          <figcaption>Fig4. Image Caption</figcaption>
-        </figure>
-      </a>
-    </div>
+    @endforeach
   </div>
 </section>
 <!--
@@ -71,7 +49,7 @@ START MODULE AREA 3: CTA Bar 1
       <p class="MOD_CTABAR_Msg">Lorem ipsum dolor sit amet, consectetur adipi scing elit</p>
     </div>
     <div data-layout="al16 ch6 ec4" class="MOD_CTABAR_BtnContainer">
-      <a class="btn" href="{{$post->link_url}}" target="_blank">Read more</a>
+      <a class="btn" href="{{$post[0]->link_url}}" target="_blank">Read more</a>
     </div>
   </div>
 </section>
