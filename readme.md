@@ -102,3 +102,9 @@ App\Post::all()->toArray();
 // リネーム
 
 [Migrationファイル内でrenameColumnがエラーになったのを解決 - Qiita](https://qiita.com/Frog_woman/items/d98b861a2033610798f7)
+
+// シーダー（初期値の入力）
+```
+# php artisan make:seeder ArticlesTableSeeder
+# php artisan db:seed
+```
