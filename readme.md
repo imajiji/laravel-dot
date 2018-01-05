@@ -51,11 +51,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## Command log
-・composerのインストール
-・.envファイルの設定
-・ドキュメントルートの設定
-・php artisan key:generate
-・php artisan migrate:install
+- [Vagrant box centos/7 - Vagrant Cloud](https://goo.gl/EtS9oH)
+- [php7.1をyumにてインストール | Skyarch Broadcasting](https://goo.gl/wvRpG9)
+- [MySQL 5.7 を CentOS 7 に yum インストールする手順 | WEB ARCH LABO](https://goo.gl/ThF3Ng)
+
+- composerのインストール
+- .envファイルの設定
+- ドキュメントルートの設定
+- php artisan key:generate
+- php artisan migrate:install
 ```
 # php composer.phar create-project --prefer-dist laravel/laravel [myblog]
 
