@@ -68,7 +68,7 @@ App\Post::all()->toArray();
 # php artisan db:seed
 ```
 
-###コマンドの作成（バッジ）
+### コマンドの作成（バッジ）
 [Laravelでコマンドラインアプリケーションを作成する - Qiita](https://goo.gl/VDkmH8)
 ```
 // 雛形作成
