@@ -67,3 +67,12 @@ App\Post::all()->toArray();
 # php artisan make:seeder ArticlesTableSeeder
 # php artisan db:seed
 ```
+
+###コマンドの作成（バッジ）
+[Laravelでコマンドラインアプリケーションを作成する - Qiita](https://goo.gl/VDkmH8)
+```
+// 雛形作成
+# php artisan make:command SampleCommand
+or
+# php artisan make:command sample/SampleCommand
+```
