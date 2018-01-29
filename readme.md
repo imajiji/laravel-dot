@@ -7,7 +7,7 @@
 
 - composerのインストール
 - .envファイルの設定
-- ドキュメントルートの設定
+- ドキュメントルートの設定（public）
 - php artisan key:generate
 - php artisan migrate:install
 ```
