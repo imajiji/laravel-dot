@@ -89,3 +89,6 @@ or
 ```
 # systemctl restart network.service
 ```
+あとはこの辺で設定
+- CentOS7.4上でLaravelプロジェクトを動かすための環境を作る
+ - https://qiita.com/tosite0345/items/b9ec1594f359f03b0403
