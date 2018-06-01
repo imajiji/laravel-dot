@@ -76,3 +76,11 @@ App\Post::all()->toArray();
 or
 # php artisan make:command sample/SampleCommand
 ```
+
+### winで詰まった点
+Windows+VagrantでCentOS7の公式boxが起動できない("rsync" could not be found on your PATH)
+https://qiita.com/tenmyo/items/c2bb714117c98ae979de
+
+Vagrantのboxを手動でダウンロード – the2g
+https://the2g.com/1258
+※vagrantのバージョンが古いため？hashcorpのURLを見てしまうので、URLを指定する。
