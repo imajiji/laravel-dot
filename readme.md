@@ -5,9 +5,10 @@
 - [MySQL 5.7でrootユーザのパスワードを再設定 - Qiita](https://goo.gl/9AqW8A)
 
 
-- composerのインストール
+- composerのインストール(installの実行)
 - .envファイルの設定
 - ドキュメントルートの設定（public）
+- SELinuxの解除
 - php artisan key:generate
 - php artisan migrate:install
 ```
