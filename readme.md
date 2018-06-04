@@ -6,7 +6,7 @@
 
 
 - composerのインストール(installの実行)
-- .envファイルの設定
+- .envファイルの設定(.env.exampleからコピー)
 - ドキュメントルートの設定（public）
 - SELinuxの解除
 - php artisan key:generate
