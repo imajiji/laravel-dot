@@ -3,8 +3,7 @@
 - [php7.1をyumにてインストール | Skyarch Broadcasting](https://goo.gl/wvRpG9)
 - [MySQL 5.7 を CentOS 7 に yum インストールする手順 | WEB ARCH LABO](https://goo.gl/ThF3Ng)
 - [MySQL 5.7でrootユーザのパスワードを再設定 - Qiita](https://goo.gl/9AqW8A)
-
-
+- Laravel
 - composerのインストール(installの実行)
 - .envファイルの設定(.env.exampleからコピー)
 - ドキュメントルートの設定（public）
