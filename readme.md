@@ -12,6 +12,9 @@
 - php artisan migrate:install
 ```
 # php composer.phar create-project --prefer-dist laravel/laravel [myblog]
+# ※インストーラーでの作成もできる（2018/08/09現在）
+# インストール 5.6 Laravel　https://goo.gl/FdEvuh
+
 
 # php artisan make:migration create_posts_table --create=posts
 # php artisan migrate
