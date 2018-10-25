@@ -1,7 +1,8 @@
 ## Command log
 - [Vagrant box centos/7 - Vagrant Cloud](https://goo.gl/EtS9oH)
 - [php7.1をyumにてインストール | Skyarch Broadcasting](https://goo.gl/wvRpG9)
-- [MySQL 5.7 を CentOS 7 に yum インストールする手順 | WEB ARCH LABO](https://goo.gl/ThF3Ng)
+- ~~[MySQL 5.7 を CentOS 7 に yum インストールする手順 | WEB ARCH LABO](https://goo.gl/ThF3Ng)~~
+− [MySQL 8.0 を yum でインストール&設定メモ | あぱーブログ](https://blog.apar.jp/linux/9868/)
 - [MySQL 5.7でrootユーザのパスワードを再設定 - Qiita](https://goo.gl/9AqW8A)
 - Laravelの設置
 - composerのインストール(installの実行)
