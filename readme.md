@@ -4,7 +4,7 @@
 - ~~[MySQL 5.7 を CentOS 7 に yum インストールする手順 | WEB ARCH LABO](https://goo.gl/ThF3Ng)~~
 - [MySQL 8.0 を yum でインストール&設定メモ | あぱーブログ](https://blog.apar.jp/linux/9868/)
 - [MySQL 5.7でrootユーザのパスワードを再設定 - Qiita](https://goo.gl/9AqW8A)
-- Laravelの設置
+- Laravelの設置（https://readouble.com/laravel/5.7/ja/installation.html）
 - composerのインストール(installの実行)
 - .envファイルの設定(.env.exampleからコピー)
 - ドキュメントルートの設定（public）
